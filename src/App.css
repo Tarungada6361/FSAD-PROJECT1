@@ -1,0 +1,245 @@
+/* ---------------- GLOBAL RESET ---------------- */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+/* ---------------- BODY ---------------- */
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Beautiful gradient background */
+  background: linear-gradient(135deg, #4F46E5, #0EA5E9);
+  min-height:100vh;
+  color:#0F172A;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+
+  background: rgba(15,23,42,0.85);
+  backdrop-filter: blur(8px);
+  color:white;
+  box-shadow:0 6px 18px rgba(0,0,0,0.25);
+}
+
+.navbar .logo{
+  font-size:1.6rem;
+  font-weight:700;
+  letter-spacing:.5px;
+  color:#F8FAFC;
+}
+
+/* NAV LINKS */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:22px;
+}
+
+.nav-links a{
+  color:#E2E8F0;
+  text-decoration:none;
+  font-weight:500;
+  padding:6px 12px;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  background:#3B82F6;
+  color:white;
+}
+
+/* USER INFO */
+.user-info{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* LOGOUT BUTTON */
+.user-info button{
+  background:#22C55E;
+  border:none;
+  padding:6px 12px;
+  border-radius:8px;
+  color:white;
+  font-weight:600;
+  transition:.25s;
+}
+
+.user-info button:hover{
+  background:#16A34A;
+  transform:translateY(-1px);
+}
+
+/* ---------------- MAIN CONTENT CARD ---------------- */
+.content{
+  max-width:900px;
+  margin:50px auto;
+  background:white;
+  padding:32px;
+  border-radius:16px;
+  box-shadow:0 18px 45px rgba(0,0,0,.25);
+}
+
+/* PAGE TITLE */
+.page h2{
+  margin-bottom:20px;
+  color:#1E3A8A;
+  font-weight:700;
+}
+
+/* ---------------- FORM INPUTS ---------------- */
+form{
+  margin-bottom:30px;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:11px;
+  margin-top:7px;
+  margin-bottom:14px;
+  border:1px solid #CBD5E1;
+  border-radius:8px;
+  background:#F8FAFC;
+  transition:.2s;
+  font-size:14px;
+}
+
+/* FOCUS EFFECT */
+input:focus, textarea:focus, select:focus{
+  outline:none;
+  border-color:#3B82F6;
+  box-shadow:0 0 0 3px rgba(59,130,246,0.25);
+  background:white;
+}
+
+/* ---------------- BUTTON ---------------- */
+button{
+  background: linear-gradient(135deg,#2563EB,#06B6D4);
+  color:white;
+  border:none;
+  padding:11px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  letter-spacing:.3px;
+  transition:.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(37,99,235,.45);
+}
+
+/* ---------------- PROJECT CARDS ---------------- */
+.projects-list ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.projects-list li{
+  background:#F8FAFC;
+  margin-bottom:18px;
+  padding:16px;
+  border-radius:12px;
+  border:1px solid #E2E8F0;
+  transition:.25s;
+}
+
+.projects-list li:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
+}
+
+/* FEEDBACK */
+.saved-feedback{
+  margin-top:8px;
+  font-style:italic;
+  color:#16A34A;
+  font-weight:500;
+}
+
+/* HERO IMAGE */
+.home .hero-image{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  border-radius:12px;
+  margin:18px 0;
+}
+
+/* LINKS */
+a{
+  color:#2563EB;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+.hero {
+  text-align: center;
+}
+
+.hero-subtitle {
+  color: #64748B;
+  margin-bottom: 15px;
+}
+
+.hero-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-buttons .secondary {
+  background: #E5E7EB;
+  color: #111827;
+}
+
+.features h3,
+.roles h3,
+.cta h3 {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.feature-grid,
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card,
+.role-card {
+  background: #F8FAFC;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.stat h4 {
+  font-size: 1.8rem;
+  color: #2563EB;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 50px;
+}

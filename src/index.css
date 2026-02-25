@@ -1,0 +1,129 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #F1F5F9;             /* soft white background */
+  color: #0F172A;                  /* dark readable text */
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  color: #2563EB;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT CARD */
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* PAGE TITLE */
+.page h2 {
+  margin-bottom: 18px;
+  color: #1E3A8A;
+}
+
+/* FORM */
+form {
+  margin-bottom: 30px;
+}
+
+/* INPUT FIELDS */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  background: #F8FAFC;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+/* INPUT FOCUS EFFECT */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  background: #FFFFFF;
+}
+
+/* BUTTON */
+button {
+  background: #3B82F6;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+  background: #2563EB;
+  transform: translateY(-1px);
+}
+
+/* ICON */
+.icon {
+  margin-right: 6px;
+}
+
+/* PROJECT LIST */
+.projects-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* PROJECT CARD */
+.projects-list li {
+  background: #F8FAFC;
+  margin-bottom: 18px;
+  padding: 15px;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+/* CARD HOVER */
+.projects-list li:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* FEEDBACK TEXT */
+.saved-feedback {
+  margin-top: 6px;
+  font-style: italic;
+  color: #16A34A;
+  font-weight: 500;
+}
+
+/* HOME IMAGE */
+.home .hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 18px 0;
+}
